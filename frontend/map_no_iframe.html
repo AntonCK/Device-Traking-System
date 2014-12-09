@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" rel="stylesheet" href="css/site.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=drawing"></script>
+    <script type="text/javascript" src="js/areadrawingtool.js"></script>
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css"/>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/scr.js"></script>
+    <script type="text/javascript" src="js/datepair.min.js"></script>
+    <script type="text/javascript" src="js/jquery.datepair.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css"/>
+	<script type="text/javascript">
+		function setToAbout() { this.class=""; }
+		function setToMap() { this.class=""; }
+		function setToSchedule() { this.class=""; }
+		
+	</script>
+</head>
+<body>
+    <div class="head">
+        <a href="index_no_iframe.html" class="active">About us</a>
+        <a href="#">How it work</a>
+        <a href="map_no_iframe.html">Map</a>
+        <a href="login_no_iframe.html">Sign In</a>
+		<a href="areaTrackingSchedule_no_iframe.html">Schedule</a>
+    </div>
+	<div class="cont">
+		<div class="cont" style="height: 100%;">
+        <div class="content">
+            <div id="map-canvas"></div>
+        </div>
+        <div class="left-content">
+            <a class="but" onclick="applyArea()">Apply area</a>
+            <a class="but" onclick="clearArea()">Clear areas</a>
+            <div id="device_list" class="list">
+            <br />
+                <p>In date range<label id="showDateRange"><input type="checkbox"/></label></p>
+                <p>Snap to the road<label id="snapToTheRoad"><input type="checkbox"/></label></p>
+                <p>Indexing<label id="indexing"><input type="checkbox"/></label></p>
+        
+                <p id="datepair" style="display:none;">
+                    From: <br/>
+                    <input type="text" class="date start" id="fromDate" size="10"/>
+                    <input type="text" class="time start" id="fromTime" size="5"/>
+                    <br/>
+                    To:
+                    <br/>
+                    <input type="text" class="date end" id="toDate" size="10"/>
+                    <input type="text" class="time end" id="toTime" size="5"/>
+                </p>
+                <p>Device list :</p>
+                <br />
+            </div>
+        </div>
+    </div>
+	</div>
+    <div class="footer"></div>
+</body>
+</html>

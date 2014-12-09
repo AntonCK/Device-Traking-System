@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0 auto;
+    height: 100%;
+    min-width: 1348px;
+    background: #607d8b;
+}
+
+.head{
+    padding-left: 200px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background: #607d8b;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .9),0 0 40px rgba(0, 0, 0, .1) inset;
+    z-index: 100;
+}
+
+
+.wrap{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    top: 50px;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 7px -1px #000000,0 0 40px rgba(0, 0, 0, .1) inset;
+    min-height: 500px;
+}
+
+.cont{
+    background: white;
+    width: 100%;
+	height:100%;
+    }
+
+.left-content, .content{
+    position: relative;
+    float: left;
+    margin-top: 80px;
+    height: calc(100% - 120px);
+    min-height: 500px;
+}
+
+.left-content{
+    padding: 25px 0px 0px 30px;
+    width: 270px;
+    margin: 85px 5px 5px 10px;        
+    box-shadow: 1px 1px 7px -1px #000000;
+}
+
+.content{
+    width: calc(100% - 400px);
+    padding: 30px 0px 0px 0px;
+    margin-left: 50px;
+}
+
+.footer{
+    float: left;
+    position: relative;
+    background: #607d8b;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, .9);
+}
+
+.head a{
+    display: block;
+    float: left;
+    position: static;
+    text-align: center;
+    padding: 30px 10px 0 10px;
+    font-size: 20px;
+    color: white;
+    height: calc(100% - 30px);
+    min-width: 100px;
+    text-decoration: none;
+    user-select: none;
+    transition: 0.4s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),0 0 40px rgba(0, 0, 0, .1) inset;
+    margin-right: 15px;
+}
+.head a:hover{
+    background: #f44336;
+    margin-top:10px;
+    box-shadow: 0px -6px 8px 1px rgba(0,0,0,.5),0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.head a:active, .head > .active{
+    background: #ff7043;
+}
+
+#map-canvas {
+	min-width: 950px;  
+	min-height: 500px;
+    height: 98%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+a.but{
+    cursor: pointer;
+    color: #fff; 
+    text-decoration: none;
+    user-select: none;
+    background: #f44336;
+    padding: .7em 1.5em;
+    outline: none;
+} 
+a.but:hover { background: #e53935; }
+a.but:active { background: #c62828; }
+
+select {
+  width: 150px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+select[multiple] {
+  height: auto;
+}
+
+select:focus{
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
